@@ -1,0 +1,497 @@
+.ttt-navbar {
+    margin: 2px 10px;
+    border-radius: 30px;
+    // border: 2px solid rgb(0, 0, 0);
+}
+
+.ttt-user {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border-top: 2px rgb(0, 0, 0) solid;
+    border-left: 2px rgb(0, 0, 0) solid;
+    border-right: 2px rgb(0, 0, 0) solid;
+    animation-name: userborder;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.ttt-user {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border-top: 2px rgb(0, 0, 0) solid;
+    border-left: 2px rgb(0, 0, 0) solid;
+    border-right: 2px rgb(0, 0, 0) solid;
+    animation-name: userborder;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.ttt-user-no {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    color: black;
+}
+
+.ttt-user-1 {
+    border-radius: 50%;
+    margin-top: 40px;
+    width: 110px;
+    height: 110px;
+}
+
+.ttt-user-2 {
+    margin-top: 25px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+
+@keyframes userborder {
+    0% {
+        border-bottom: 90px black solid;
+        color: white;
+    }
+    50% {
+        border-bottom: 2px black solid;
+        color: black;
+    }
+    100% {
+        border-bottom: 90px black solid;
+        color: white;
+    }
+}
+
+// Grid Making
+.grid-container {
+    // background-color: black;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    height: 320px;
+    width: 320px;
+    grid-gap: 2px 2px;
+    display: grid;
+    grid-template-areas: 'box1 box2 box3' 'box4 box5 box6' 'box7 box8 box9';
+}
+
+.content-tis-grid1 {
+    grid-area: box1;
+}
+
+.content-tis-grid2 {
+    grid-area: box2;
+}
+
+.content-tis-grid3 {
+    grid-area: box3;
+}
+
+.content-tis-grid4 {
+    grid-area: box4;
+}
+
+.content-tis-grid5 {
+    grid-area: box5;
+}
+
+.content-tis-grid6 {
+    grid-area: box6;
+}
+
+.content-tis-grid7 {
+    grid-area: box7;
+}
+
+.content-tis-grid8 {
+    grid-area: box8;
+}
+
+.content-tis-grid9 {
+    grid-area: box9;
+}
+
+// common grid styling
+.ttt-box-common {
+    height: 100px;
+    width: 100px;
+    // border: 2px rgb(0, 0, 0) solid;
+    z-index: 2;
+}
+
+.tttline-1 {
+    top: 240px;
+    width: 350px;
+    height: 255px;
+    position: fixed;
+}
+
+.tttline-2 {
+    top: 234px;
+    width: 350px;
+    height: 255px;
+    position: fixed;
+    transform: rotate(180deg);
+}
+
+.tttline-3 {
+    top: 244px;
+    width: 350px;
+    height: 255px;
+    position: fixed;
+    transform: rotate(90deg);
+}
+
+.tttline-4 {
+    margin-left: 6px;
+    top: 240px;
+    width: 350px;
+    height: 255px;
+    position: fixed;
+    transform: rotate(270deg);
+}
+
+// Game Building
+// cross build
+.cross-ttt {
+    position: relative;
+}
+
+.ttt-cross-line-1 {
+    border-radius: 20px;
+    top: 45px;
+    left: 10px;
+    position: absolute;
+    margin: auto;
+    height: 10px;
+    width: 80px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    animation-name: crossttt;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-cross-line-2 {
+    border-radius: 20px;
+    top: 45px;
+    left: 10px;
+    position: absolute;
+    margin: auto;
+    height: 10px;
+    width: 80px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(135deg);
+    animation-name: crossttt;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+// animation for cross
+@keyframes crossttt {
+    0% {
+        width: 0px;
+        left: 50px;
+    }
+    100% {
+        width: 80px;
+        left: 10px;
+    }
+}
+
+// Circle Build
+.circle {
+    position: relative;
+}
+
+.circle-ttt {
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    animation-name: crossttt;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-1 {
+    border-radius: 20px;
+    position: fixed;
+    top: 360px;
+    left: 38px;
+    margin: auto;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    // transform: rotate(135deg);
+    animation-name: hor1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-1-3 {
+    border-radius: 20px;
+    position: fixed;
+    top: 466px;
+    left: 38px;
+    margin: auto;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    // transform: rotate(135deg);
+    animation-name: hor3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-1-2 {
+    border-radius: 20px;
+    position: fixed;
+    top: 256px;
+    left: 38px;
+    margin: auto;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    // transform: rotate(135deg);
+    animation-name: hor2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-2-1 {
+    border-radius: 20px;
+    position: fixed;
+    margin: auto;
+    height: 10px;
+    width: 377px;
+    background-color: rgb(0, 0, 0);
+    top: 360px;
+    left: -11px;
+    transform: rotate(135deg);
+    animation-name: winline;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-2-2 {
+    border-radius: 20px;
+    position: fixed;
+    margin: auto;
+    height: 10px;
+    width: 377px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    animation-name: winline2;
+    top: 360px;
+    left: -11px;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-2-3 {
+    border-radius: 20px;
+    position: fixed;
+    margin: auto;
+    top: 360px;
+    left: -72px;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(270deg);
+    animation-name: hor4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-2-3-1 {
+    border-radius: 20px;
+    position: fixed;
+    margin: auto;
+    top: 360px;
+    left: 38px;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(270deg);
+    animation-name: hor5;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.ttt-line-win-2-3-2 {
+    border-radius: 20px;
+    position: fixed;
+    margin: auto;
+    top: 360px;
+    left: 144px;
+    height: 10px;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(270deg);
+    animation-name: hor6;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+// animation for win line
+@keyframes hor3 {
+    0% {
+        width: 0px;
+        top: 466px;
+        left: 38px;
+    }
+    100% {
+        width: 280px;
+        top: 466px;
+        left: 38px;
+    }
+}
+
+@keyframes hor4 {
+    0% {
+        width: 0px;
+        top: 241px;
+        left: 55px;
+    }
+    100% {
+        width: 280px;
+        top: 360px;
+        left: -72px;
+    }
+}
+
+@keyframes hor5 {
+    0% {
+        width: 0px;
+        top: 245px;
+        left: 173px;
+    }
+    100% {
+        width: 280px;
+        top: 360px;
+        left: 38px;
+    }
+}
+
+@keyframes hor6 {
+    0% {
+        width: 0px;
+        top: 250px;
+        left: 270px;
+    }
+    100% {
+        width: 280px;
+        top: 360px;
+        left: 144px;
+    }
+}
+
+@keyframes hor1 {
+    0% {
+        width: 0px;
+        top: 360px;
+        left: 38px;
+    }
+    100% {
+        width: 280px;
+        top: 360px;
+        left: 38px;
+    }
+}
+
+@keyframes hor2 {
+    0% {
+        width: 0px;
+        top: 256px;
+        left: 38px;
+    }
+    100% {
+        width: 280px;
+        top: 256px;
+        left: 38px;
+    }
+}
+
+@keyframes winline {
+    0% {
+        width: 0px;
+        top: 474px;
+        left: 30px;
+    }
+    100% {
+        width: 377px;
+        top: 360px;
+        left: -11px;
+    }
+}
+
+@keyframes winline2 {
+    0% {
+        width: 0px;
+        top: 483px;
+        left: 294px;
+    }
+    100% {
+        width: 377px;
+        top: 360px;
+        left: -11px;
+    }
+}
+
+.win-tis-box {
+    padding-top: 10px;
+    color: black;
+    height: 18rem;
+    width: 20rem;
+    position: fixed;
+    bottom: -15px;
+    background-color: black;
+    left: 18px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #141414, 0 0 33px #0f0f0f, 0 0 10px #19191a, 0 0 0px #0d0d0e, 0 0 2px #050505;
+    animation-name: boxup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    z-index: 3;
+}
+
+.btn-tis-win {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 74px;
+    top: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #141414, 0 0 33px #0f0f0f, 0 0 10px #19191a, 0 0 0px #0d0d0e, 0 0 2px #050505;
+}
+
+// animation for box
+@keyframes boxup {
+    0% {
+        bottom: -320px;
+    }
+    100% {
+        bottom: -15px;
+    }
+}
+
+.selectmode {
+    background-color: black;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    margin-top: 115px;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 28px;
+    font-size: 22px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #141414, 0 0 33px #0f0f0f, 0 0 10px #19191a, 0 0 0px #0d0d0e, 0 0 2px #050505;
+}

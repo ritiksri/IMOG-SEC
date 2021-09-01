@@ -1,0 +1,67 @@
+<div class="grid-container" style="background-image: url('assets/background/rmcs.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%; height: 800px;">
+
+    <!-- navbar -->
+    <div style="color: white; margin-top: 10px;">
+        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 25px;">Raja Mantri Chor Sipahi
+        </h1>
+    </div>
+    <!-- user 1 -->
+    <div class="user-1">
+        user 1
+    </div>
+    <!-- user 2 -->
+    <div class="user-2">
+        user 2
+    </div>
+
+
+    <!-- center roller -->
+    <div *ngIf="yesRoll" class="chit-roll">
+        roll
+    </div>
+    <div *ngIf="notRoll">
+        <div (click)="roll()" class="chit-roll_no">
+            roll
+        </div>
+    </div>
+    <div *ngIf="doneRoll" class="chit-roll_no">
+        roll
+    </div>
+    <div *ngIf="throwChit">
+        <div class="chit-1"><i class="fa fa-envelope"></i>
+        </div>
+        <div class="chit-2"><i class="fa fa-envelope"></i>
+        </div>
+        <div (click)="chitopen()" class="chit-3"><i class="fa fa-envelope"></i>
+        </div>
+        <div class="chit-4 "><i class="fa fa-envelope"></i>
+        </div>
+    </div>
+
+    <!-- user 3 -->
+    <div class="user-3">
+        user 3
+    </div>
+    <!-- user 4 -->
+    <div class="user-4">
+        user 4
+    </div>
+
+    <!-- Chit Paper -->
+    <div *ngIf="chittoggle" class="chitpaper-tis" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+        <div (click)="chitopen()" style="color: black; margin-top: 4px; margin-left: 10px; font-size: 18px; display: inline-block;">
+            <i class="fa fa-times"></i>
+        </div>
+
+    </div>
+
+
+
+
+</div>

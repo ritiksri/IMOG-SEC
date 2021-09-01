@@ -1,0 +1,122 @@
+<div class="grid-container" style="background-image: url('assets/background/back.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+    <div class="navigation-bar-tis-grid">
+        <!-- nav bar -->
+        <div class="neon-navbar mb-3">
+            <!-- back button -->
+
+            <a routerLink="/home" class="text-danger " style="position: relative; left: 8px; top: 0px; font-size: 20px;"><i class="fa fa-arrow-circle-o-left"></i></a>
+
+            <!-- coin option -->
+            <img src="assets/icon/gold-coin.png" style="position: fixed;
+    right: 80px;
+    height: 20px;
+    width: 20px;
+    margin-top: 6px;" alt="">
+            <input type="text " class="coin-input text-center" value="1000" disabled>
+        </div>
+    </div>
+    <div class="content-tis-grid">
+        <!-- content -->
+        <div class="container mb-5">
+            <!-- logo image -->
+            <div class="logo-tis-game-list text-center">
+                <h3 class="logo-img-tis"><i class="fa fa-gamepad"></i> <br> I M O g </h3>
+            </div>
+            <!-- Rank Show -->
+            <div class="text-center rank-tis-show">
+                {{sessionname}} is on #1 place
+            </div>
+            <!-- listing game -->
+            <div class="row">
+                <div class=" neonText mx-4  my-3">
+                    <img src="assets/icon/ludo.png" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                </div>
+                <div class=" neonText mx-4  my-3">
+                    <img src="assets/icon/chess.png" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                </div>
+                <div class=" neonText mx-4  my-3">
+                    <img src="assets/icon/snake-nd-ladder.png" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                </div>
+                <div class=" neonText mx-4  my-3">
+                    <img src="assets/icon/penfight.jpg" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                </div>
+                <div class=" neonText mx-4  my-3">
+                    <a routerLink="/raja-mantri-chor-sipahi">
+                        <img src="assets/icon/rmcs.png" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                    </a>
+                </div>
+                <div class=" neonText mx-4  my-3">
+                    <a routerLink="/tictactoe-mode-listing">
+                        <img src="assets/icon/tictactoe.png" style="border-radius: 29px; height: 6.5rem; width: 6.5rem;" alt="">
+                    </a>
+                </div>
+                <div class="text-center">
+                    <div class="text-center btn btn-sm btn-danger mx-4 " (click)="logout()">Logout</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item4">
+        <!-- cross button -->
+        <div *ngIf="closeshow">
+            <a (click)="clickListNotShow()" class="close-tis text-light text-center"><i class="fa fa-times icon-circle"></i></a>
+        </div>
+        <!-- List Icon -->
+
+        <div *ngIf="listshow">
+            <!-- profile -->
+            <a href="" class="profile-tis text-light text-center"><i class="fa fa-user icon-circle"></i></a>
+            <!-- Shop -->
+            <a href="" class="shop-tis text-light text-center"><i class="fa fa-shopping-cart icon-circle"></i></a>
+            <!-- Gift -->
+            <a href="" class="gift-tis text-light text-center"><i class="fa fa-gift icon-circle"></i></a>
+            <!-- Setting -->
+            <a href="" class="setting-tis text-light text-center"><i class="fa fa-cogs icon-circle"></i></a>
+            <!-- Rank -->
+            <a href="" class="rank-tis text-light text-center"><i class="fa fa-bar-chart icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="add-friend-tis text-light text-center"><i class="fa fa-user-plus icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="clan-tis text-light text-center"><i class="fa fa-shield icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="tournament-tis text-light text-center"><i class="fa fa-trophy icon-circle"></i></a>
+        </div>
+        <div *ngIf="closinglistshow">
+            <!-- profile -->
+            <a href="" class="profile-tis1 text-light text-center"><i class="fa fa-user icon-circle"></i></a>
+            <!-- Shop -->
+            <a href="" class="shop-tis1 text-light text-center"><i class="fa fa-shopping-cart icon-circle"></i></a>
+            <!-- Gift -->
+            <a href="" class="gift-tis1 text-light text-center"><i class="fa fa-gift icon-circle"></i></a>
+            <!-- Setting -->
+            <a href="" class="setting-tis1 text-light text-center"><i class="fa fa-cogs icon-circle"></i></a>
+            <!-- Rank -->
+            <a href="" class="rank-tis1 text-light text-center"><i class="fa fa-bar-chart icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="add-friend-tis1 text-light text-center"><i class="fa fa-user-plus icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="clan-tis1 text-light text-center"><i class="fa fa-shield icon-circle"></i></a>
+            <!-- Add Friends -->
+            <a href="" class="tournament-tis1 text-light text-center"><i class="fa fa-trophy icon-circle"></i></a>
+        </div>
+        <div *ngIf="listnotshow">
+            <a (click)="clickListShow()" class="profile-tis text-light text-center"><i class="fa fa-smile-o icon-circle"></i></a>
+        </div>
+    </div>
+
+    <div class="item5">Footer
+
+    </div>
+    <br><br><br><br><br><br><br><br>
+</div>
+
+<div *ngIf="exitShowPopUp" class="mx-auto exit-tis-box">
+    <h3 class="text-center">Are You Sure Want Too Exit?</h3>
+    <div class="mx-auto text-center form-group">
+        <button type="button" (click)="exitpopupsuccess()" class="btn neonTextButton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y E S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" (click)="exitpopupclose()" class="btn neonTextButton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N O&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    </div>
+</div>

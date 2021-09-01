@@ -1,20 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div *ngIf="showContent" class="background-tis" style="background-image: url('assets/background/back.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="logo-tis-game-list text-center">
+        <h3 class="logo-img-tis"><i class="fa fa-gamepad"></i> <br> I M O g </h3>
+    </div>
+    <div class="container ">
+        <div class="text-center my-3 col-lg-10">
+            <a routerLink="/login" class="btn btn-lg neonText btn-block my-4">L O G I N</a>
+        </div>
+        <div class="text-center my-3 col-lg-10">
+            <a routerLink="/signup" class="btn btn-lg neonText btn-block my-4">S I G N &nbsp; U P</a>
+        </div>
+    </div><br>
+    <div class="text-center">
+        &nbsp;
+        <!-- <a routerLink="/game-list" class="text-light"> Skip For Now <i class="fa fa-arrow-right"></i> </a> -->
+    </div><br><br>
+    <div class="container">
+        <div class="text-center my-4">
+            <img src="assets/login/google.png" class="google-login img" alt="...">
+        </div>
+        <div class="text-center my-4 mb-5">
+            <img src="assets/login/facebook.png" class="google-login img" alt="...">
+        </div>
+    </div>
+    <audio loop autoplay> 
+        <source src="assets/audio/bg-music.mp3" type="audio/mpeg"> 
+    </audio>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<!-- Opening Page -->
+<!-- LoGO -->
+<div *ngIf="showLogo" class="background-tis" style="background-color: black;">
+
+    <small class="text-center" style="margin-top: 10px; margin-left: 20px;"> Not represents final version : Underdevelopment By Ritik</small>
+    <div class=" tis-opening text-center">
+        <h3 class="logo-img-tis"><i class="fa fa-gamepad"></i> <br> I M O g </h3>
+    </div>
+
+    <div class="txt-prog">
+        <p><i> "Games don't make you violent, lag does." </i></p>
+        <div class="progressBar mx-auto "></div>
+        <br>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+<!-- Company -->
+<div *ngIf="showCompany" class="background-tis" style="background-color: black;">
+
+    <!-- logo image -->
+    <div class=" tis-opening text-center">
+        <h4 class="logo-img-tis-1"><i class="fa fa-gamepad"></i> <br> Company</h4>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</div>

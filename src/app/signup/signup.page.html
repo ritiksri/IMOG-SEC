@@ -1,0 +1,69 @@
+<a routerLink="/home" class="text-danger" style="position: fixed; left: 8px; top: 0px; font-size: 20px;"><i class="fa fa-arrow-circle-o-left"></i></a>
+<div class="container mb-5" style="background-image: url('assets/background/back.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+    <!-- logo image -->
+    <div class="logo-tis-game-list text-center">
+        <h3 class="logo-img-tis"><i class="fa fa-gamepad"></i> <br> I M O g </h3>
+    </div>
+    <h1 class="text-center text-light my-4" style="font-family: 'Bebas Neue', cursive;">S i g n &nbsp; U p</h1>
+    <div class="mx-auto text-center form-group">
+        <button type="button" (click)="emailSignup()" class="btn neonText">E M A I L</button> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" (click)="phoneSignup()" class="btn neonText">P H O N E</button>
+    </div>
+
+
+
+    <!-- EMAIL -->
+    <div *ngIf="emailSignupForm" class="text-light">
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Name</label>
+            <input type="text " class="form-control " [(ngModel)]="name" placeholder="Enter Your Name ">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Email Address</label>
+            <input type="email " class="form-control " [(ngModel)]="email" placeholder="Enter Your Email Address ">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Password</label>
+            <input type="text " class="form-control " [(ngModel)]="pass" placeholder="Must be greater than 8 digits ">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Confirm Password</label>
+            <input type="text " class="form-control " placeholder="Confirm Password ">
+        </div>
+        <div class="text-center my-3 col-sm-10 mb-5 ">
+            <button type="submit " (click)="addCar()" class="btn neonText btn-block my-4 ">Sign Up</button>
+            <button type="submit " (click)="fetch()" class="btn neonText btn-block my-4 ">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- PHONE -->
+    <div *ngIf="phoneSignupForm" class="text-light ">
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Name</label>
+            <input type="text " class="form-control " [(ngModel)]="name" placeholder="Enter Your Name ">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Phone Number</label>
+            <input type="text " class="form-control " [(ngModel)]="phone" placeholder="Enter Your Phone Number">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Password</label>
+            <input type="text " class="form-control " [(ngModel)]="pass" placeholder="Must be greater than 8 digits ">
+        </div>
+        <div class="form-group text-light col-sm-10 mb-1 ">
+            <label for="exampleInputEmail1 ">Confirm Password</label>
+            <input type="text " class="form-control " placeholder="Confirm Password ">
+        </div>
+        <div class="text-center my-3 col-sm-10 mb-5 ">
+            <button type="submit " (click)="addCar()" class="btn neonText btn-block my-4 ">Sign Up</button>
+        </div>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br>
+</div>

@@ -1,0 +1,67 @@
+.selectmode {
+    background-color: black;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    margin-top: 43px;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 28px;
+    font-size: 22px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #141414, 0 0 33px #0f0f0f, 0 0 10px #19191a, 0 0 0px #0d0d0e, 0 0 2px #050505;
+}
+
+.tis-opening {
+    margin-top: 240px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.progressBar {
+    border-radius: 20px;
+    position: absolute;
+    height: 5px;
+    width: 300px;
+    background-color: black;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 0, 0), 0 0 33px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), rgb(0, 0, 0)2px #f00;
+    animation-name: openingProgress;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.txt-prog {
+    margin-top: 160px;
+    position: absolute;
+    left: 25px;
+    width: 300px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes openingProgress {
+    0% {
+        width: 0px;
+    }
+    100% {
+        opacity: 300px;
+    }
+}
+
+@keyframes openingLogo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+.logo-img-tis {
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+}

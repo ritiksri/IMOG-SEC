@@ -1,0 +1,255 @@
+<div *ngIf="showGameBoard" style="background-image: url('assets/background/tictactoe-back.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+    <!-- navbar -->
+    <div class="ttt-navbar">
+        <!-- back button -->
+        <a routerLink="/game-list" class="text-dark" style="position: relative; left: 5px; top: -1px; font-size: 20px;"><i class="fa fa-arrow-circle-o-left"></i></a>
+    </div>
+    <div style="position: fixed; top: -4px; color: black; left: 107px;">
+        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive;">Tic Tac Toe
+        </h1>
+    </div>
+    <!-- user 1 -->
+    <div class="">
+        <div class="ttt-user-1  mx-auto">
+            <div *ngIf="computerTurnToRun" class="ttt-user">
+                <h2 class="text-center ">Devil Machine</h2>
+            </div>
+            <div *ngIf="computerNotTurnToRun" class="ttt-user-no">
+                <h2 class="text-center ">Devil Machine</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Game lines -->
+
+    <!-- hor line -->
+    <img class="tttline-1" src="assets/tictactoe/line.png" alt="">
+    <img class="tttline-2" src="assets/tictactoe/line.png" alt="">
+    <img class="tttline-3" src="assets/tictactoe/line.png" alt="">
+    <img class="tttline-4" src="assets/tictactoe/line.png" alt="">
+    <!-- game TicTacToe -->
+    <div class="grid-container mx-auto">
+        <div (click)="box1()" class="grid-container1 ttt-box-common">
+
+            <div *ngIf="winline2Show" class="ttt-line-win-1"></div>
+            <!-- Cross Start -->
+            <div *ngIf="crossShow1" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow1" class="circle">
+                <div class="circle-ttt">
+                </div>
+
+                <!-- circle end -->
+            </div>
+        </div>
+        <div (click)="box2()" class="grid-container2 ttt-box-common">
+            <!-- Cross Start -->
+            <div *ngIf="crossShow2" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow2" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+
+        </div>
+        <div (click)="box3()" class="grid-container3 ttt-box-common">
+            <!-- Cross Start -->
+            <div *ngIf="crossShow3" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow3" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box4()" class="grid-container4 ttt-box-common">
+
+            <div *ngIf="winline4Show" class="ttt-line-win-2-3"></div>
+            <div *ngIf="winline1Show" class="ttt-line-win-1-2"></div>
+            <!-- Cross Start -->
+            <div *ngIf="crossShow4" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow4" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box5()" class="grid-container5 ttt-box-common">
+
+            <div *ngIf="dig1Show" class="ttt-line-win-2-1"></div>
+            <div *ngIf="dig2Show" class="ttt-line-win-2-2"></div>
+            <div *ngIf="winline5Show" class="ttt-line-win-2-3-1"></div>
+            <!-- Cross Start -->
+            <div *ngIf="crossShow5" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow5" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box6()" class="grid-container6 ttt-box-common">
+            <div *ngIf="winline6Show" class="ttt-line-win-2-3-2"></div>
+            <!-- Cross Start -->
+            <div *ngIf="crossShow6" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow6" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box7()" class="grid-container7 ttt-box-common">
+            <div *ngIf="winline3Show" class="ttt-line-win-1-3"></div>
+            <!-- Cross Start -->
+            <div *ngIf="crossShow7" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow7" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box8()" class="grid-container8 ttt-box-common">
+            <!-- Cross Start -->
+            <div *ngIf="crossShow8" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow8" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+        <div (click)="box9()" class="grid-container9 ttt-box-common">
+            <!-- Cross Start -->
+            <div *ngIf="crossShow9" class="cross-ttt">
+                <div class="ttt-cross-line-1"></div>
+                <div class="ttt-cross-line-2"></div>
+            </div>
+            <!-- Cross End -->
+            <!-- Circle start -->
+            <div *ngIf="circleShow9" class="circle">
+                <div class="circle-ttt">
+                </div>
+            </div>
+            <!-- circle end -->
+        </div>
+    </div>
+    <!-- user 2 -->
+    <div>
+        <div class="ttt-user-2  mx-auto">
+            <div *ngIf="userTurnToRun" class="ttt-user">
+                <h2 class="text-center ">User X</h2>
+            </div>
+            <div *ngIf="userNotTurnToRun" class="ttt-user-no">
+                <h2 class="text-center ">User X</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Win message -->
+    <div *ngIf="crossWin" class="mx-auto win-tis-box" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+
+        <h3 class="text-center">Cross Wins</h3>
+        <div class="mx-auto text-center form-group">
+            <button type="button" (click)="restartGame()" class="btn btn-tis-win btn-block-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R E S T A R T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div *ngIf="circleWin" class="mx-auto win-tis-box" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+
+        <h3 class="text-center">Circle Wins</h3>
+        <div class="mx-auto text-center form-group">
+            <button type="button" (click)="restartGame()" class="btn btn-tis-win btn-block-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R E S T A R T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div *ngIf="gameDrawSuccess" class="mx-auto win-tis-box" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+        <h3 class="text-center">Game Draw :)</h3>
+        <div class="mx-auto text-center form-group">
+            <button type="button" (click)="restartGame()" class="btn btn-tis-win btn-block-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R E S T A R T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+</div>
+
+<!-- Select Turn -->
+<div *ngIf="showSelectTurnMode" style="background-image: url('assets/background/tictactoe-back.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+    <!-- back button -->
+    <div>
+        <a routerLink="/tictactoe-mode-listing" class="text-dark" style="position: relative; left: 5px; top: -1px; font-size: 20px;"><i class="fa fa-arrow-circle-o-left"></i></a>
+    </div>
+    <div style="color: black; ">
+        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 40px; ">Select Chance
+        </h1>
+    </div>
+    <div (click)="userFirstSelected()" class="selectmode text-center">
+        User First
+    </div>
+    <div (click)="computerFirstSelected()" class="selectmode text-center">
+        Computer First
+    </div>
+    <div style="color: black; ">
+        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 40px; margin-top: 40px;">Tic Tac Toe
+        </h1>
+    </div>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+</div>

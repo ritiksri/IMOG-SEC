@@ -1,27 +1,82 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.google-login {
+    border-radius: 20px;
+    width: 320px;
+    height: 50px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.neonText {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 31px;
+    color: #fff;
+    // background-color: rgb(218, 45, 22);
+    box-shadow: 0 0 7px #fff, 0 0 1px #fff, 0 0 4px #fff, 0 0 7px #f00, 0 0 18px #f00, 0 0 0px #f09, 0 0 0px #f00, 0 0 0px #f00;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.logo-img-tis {
+    font-size: 60px;
+    font-family: 'Monoton', cursive;
+    animation-name: xample;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
 }
 
-#container a {
-  text-decoration: none;
+.logo-img-tis-1 {
+    font-size: 42px;
+    font-family: 'Monoton', cursive;
+    animation-name: xample;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.logo-tis-game-list {
+    margin-top: 5px;
+}
+
+.tis-opening {
+    margin-top: 240px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.progressBar {
+    border-radius: 20px;
+    position: absolute;
+    height: 5px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    animation-name: openingProgress;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.txt-prog {
+    margin-top: 160px;
+    position: absolute;
+    left: 25px;
+    width: 300px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes openingProgress {
+    0% {
+        width: 0px;
+    }
+    100% {
+        opacity: 300px;
+    }
+}
+
+@keyframes openingLogo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

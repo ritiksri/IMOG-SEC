@@ -1,0 +1,570 @@
+.neonText {
+    border-radius: 29px;
+    padding: auto;
+    height: 6.5rem;
+    width: 6.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36 px;
+    color: #fff;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    // background-color: rgb(218, 45, 22);
+    box-shadow: 0 0 8px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.neon-navbar {
+    margin-top: 6px;
+    border-radius: 30px;
+    color: #fff;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.coin-input {
+    font-size: 15px;
+    background-color: #fc070757;
+    color: white;
+    margin-top: 5px;
+    position: fixed;
+    right: 8px;
+    width: 69px;
+    height: 20px;
+    border-radius: 17px;
+    border: 1px solid red;
+}
+
+.navigation-bar-tis-grid {
+    grid-area: header;
+}
+
+.content-tis-grid {
+    grid-area: menu;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header' 'menu menu right' 'menu menu right' 'footer footer footer';
+}
+
+.logo-img-tis {
+    font-size: 36px;
+    font-family: 'Monoton', cursive;
+    animation-name: xample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.logo-tis-game-list {
+    // padding-right: 80px;
+    margin-top: 5px;
+}
+
+.rank-tis-show {
+    // padding-right: 92px;
+    margin-bottom: 27px;
+    margin-top: -12px;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    animation-name: xample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.icon-circle {
+    width: 24px;
+    height: 20px;
+}
+
+.close-tis {
+    font-size: 1.3rem;
+    position: fixed;
+    // background-color: #fc0707a9;
+    right: 20px;
+    top: 45px;
+    // width: 40px;
+    // // height: 40px;
+    // padding: 10px;
+    // border-radius: 50%;
+    // // border: 2px solid red;
+    // animation-name: icon1;
+    // animation-duration: 1s;
+    // animation-iteration-count: 1;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.profile-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.shop-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 155px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.gift-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 225px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.setting-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 295px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.rank-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 365px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon5;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.add-friend-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 435px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon6;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.clan-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 505px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon7;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.tournament-tis {
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 575px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon8;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+// aNIMATIONS for color
+@keyframes example {
+    0% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
+    }
+    50% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 255, 34), 0 0 33px rgb(0, 255, 34), 0 0 10px rgb(123, 255, 0), 0 0 0px rgb(0, 255, 21), 0 0 2px rgb(0, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    }
+}
+
+@keyframes xample {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    }
+    50% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 255, 34), 0 0 33px rgb(0, 255, 34), 0 0 10px rgb(123, 255, 0), 0 0 0px rgb(0, 255, 21), 0 0 2px rgb(0, 255, 0);
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
+    }
+}
+
+.exit-tis-box {
+    padding-top: 10px;
+    height: 10rem;
+    width: 20rem;
+    position: fixed;
+    top: 230px;
+    left: 23px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #0004ff, 0 0 33px #2f00ff, 0 0 10px #ae00ff, 0 0 0px #2600ff, 0 0 2px #1100ff;
+}
+
+.neonTextButton {
+    margin-top: 22px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    // background-color: rgb(218, 45, 22);
+    box-shadow: 0 0 7px #fff, 0 0 1px #fff, 0 0 4px #fff, 0 0 7px #f00, 0 0 18px #f00, 0 0 0px #f09, 0 0 0px #f00, 0 0 0px #f00;
+}
+
+// Animation for Icons opening
+@keyframes icon1 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon2 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 155px;
+    }
+}
+
+@keyframes icon3 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 225px;
+    }
+}
+
+@keyframes icon4 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 295px;
+    }
+}
+
+@keyframes icon5 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 365px;
+    }
+}
+
+@keyframes icon6 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 435px;
+    }
+}
+
+@keyframes icon7 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 505px;
+    }
+}
+
+@keyframes icon8 {
+    0% {
+        top: 85px;
+    }
+    100% {
+        top: 575px;
+    }
+}
+
+// Animation for Icons closing
+@keyframes icon11 {
+    0% {
+        top: 85px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon21 {
+    0% {
+        top: 155px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon31 {
+    0% {
+        top: 225px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon41 {
+    0% {
+        top: 295px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon51 {
+    0% {
+        top: 365px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon61 {
+    0% {
+        top: 435px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon71 {
+    0% {
+        top: 505px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+@keyframes icon81 {
+    0% {
+        top: 575px;
+        display: inline;
+    }
+    100% {
+        top: 85px;
+    }
+}
+
+// CLosing Icons
+.profile-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon11;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.shop-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon21;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.gift-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon31;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.setting-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon41;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.rank-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon51;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.add-friend-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon61;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.clan-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon71;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+.tournament-tis1 {
+    // display: none;
+    position: fixed;
+    background-color: #fc0707a9;
+    right: 9px;
+    top: 85px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid red;
+    animation-name: icon81;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
