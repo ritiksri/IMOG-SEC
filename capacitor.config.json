@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "IMOG-MultiGame",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

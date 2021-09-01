@@ -1,0 +1,7 @@
+{
+  "name": "IMOG-MultiGame",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
