@@ -11,7 +11,7 @@ export class TictactoeMultiplayerService {
     throw new Error('Method not implemented.');
   }
   // baseUrl = 'http://localhost/AngularProj/ritikapp/php';
-    baseUrl = 'http://imog.epizy.com/php';
+    baseUrl = 'https://4b52161838d67a.localhost.run/php';
   constructor(private http: HttpClient) { }
   getAll() {
     return this.http.get(`${this.baseUrl}/List.php`).pipe(
