@@ -1,0 +1,97 @@
+.mode1{
+    border: 2px solid chartreuse;
+    border-radius:  20px; 
+    height: 90px;
+    width: 160px;
+    margin:auto;
+    margin-top: 80px;
+    color: darksalmon;
+    text-align: center;
+    animation-name: xamples;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.mode3{
+    border: 2px solid chartreuse;
+    border-radius:  20px; 
+    height: 90px;
+    width: 160px;
+    margin:auto;
+    margin-top: 40px;
+    color: darksalmon;
+    text-align: center;
+    animation-name: xamples;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.mode2{
+    border: 2px solid chartreuse;
+    border-radius:20px; 
+    height: 90px;
+    width: 160px;
+    margin:auto;
+    margin-top: 40px;
+    color: darksalmon;
+    text-align: center;
+    animation-name: xamples;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.logo-img-tis {
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    animation-name: xample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
+
+@keyframes xample {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    }
+    50% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 255, 34), 0 0 33px rgb(0, 255, 34), 0 0 10px rgb(123, 255, 0), 0 0 0px rgb(0, 255, 21), 0 0 2px rgb(0, 255, 0);
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
+    }
+}
+.ludo-icon{
+margin: auto;
+margin-top: 70px;
+
+}
+@keyframes xamples {
+    0% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    }
+    50% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 255, 34), 0 0 33px rgb(0, 255, 34), 0 0 10px rgb(123, 255, 0), 0 0 0px rgb(0, 255, 21), 0 0 2px rgb(0, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
+    }
+}
+.bgclass{
+    background-color: blueviolet;
+    animation-name: xampled;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes xampled{
+    0%{
+        background-color: burlywood;
+    }
+    25%{
+        background-color: red;
+    
+    }
+    50%{
+        background-color: rgb(123, 255, 0);
+    }
+}
