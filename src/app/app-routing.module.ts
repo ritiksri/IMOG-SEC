@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'tictactoe-multiplayer',
     loadChildren: () => import('./tictactoe-multiplayer/tictactoe-multiplayer.module').then( m => m.TictactoeMultiplayerPageModule)
   },
+  {
+    path: 'ludo-multiplayer-game',
+    loadChildren: () => import('./ludo-multiplayer-game/ludo-multiplayer-game.module').then( m => m.LudoMultiplayerGamePageModule)
+  },
 ];
 
 @NgModule({

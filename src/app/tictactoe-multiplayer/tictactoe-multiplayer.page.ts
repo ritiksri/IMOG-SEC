@@ -143,9 +143,6 @@ this.joinCodeVar = true;
 this.showSelectTurnMode = false;
 this.createCodeVar = false;
 this.joinkiyahumai = true;
-setTimeout(()=>{   
-this.updateChance();
-}, 200);
 }
 startGame(): void{
   this.createCodeVar = false;
@@ -162,6 +159,9 @@ showId(): void{
 this.joinCodeVar = false;
  
   this.updateCar2();
+  setTimeout(()=>{   
+  this.updateChance();
+  }, 200);
 
 setTimeout(()=>{   
   this.getCars(); this.tictactoeWinChancesCROSS();
@@ -201,7 +201,7 @@ if (this.khelkhatam == false) {
         // this.valueD = gameselect.box1; 
         const result = this.cars.find( ({ id }) => id === this.gameid );
         this.gameselected = result;
-        // console.log(result) 
+        console.log(result) 
         this.gameid = this.gameselected.id; 
         this.user1 = this.gameselected.user1_name;
         this.user2 = this.gameselected.user2_name; 
@@ -212,6 +212,10 @@ if (this.khelkhatam == false) {
         // this.valueI = gameselect.box1;
         // let userChance: number = gameselect.chance;
         // this.userTurn = userChance;
+
+        this.sessionname = localStorage.getItem("name"); 
+
+
         console.log(this.gameid);
         // console.log(this.gameselected.box5);
         this.updateimage();
@@ -388,7 +392,7 @@ this.listService.delete(this.gameselected).subscribe(
     
   }
   addCar() {
-    this.sessionname = localStorage.getItem("name");
+    this.sessionname = localStorage.getItem("name"); 
     this.addBox  =  {
     id: undefined,
     user1_name: this.sessionname,

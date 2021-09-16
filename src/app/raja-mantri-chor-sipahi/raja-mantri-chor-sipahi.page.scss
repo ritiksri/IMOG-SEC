@@ -187,3 +187,26 @@
     border-radius: 20px;
     box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #141414, 0 0 33px #0f0f0f, 0 0 10px #19191a, 0 0 0px #0d0d0e, 0 0 2px #050505;
 }
+
+.score-rmcs {
+    height: 300px;
+    width: 90%;
+    border: 2px solid #000000;
+    position: fixed;
+    top: -10px;
+    left: 18px;
+    animation-name: scoreopen;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scoreopen {
+    0% {
+        top: -400px;
+        left: 18pxx;
+    }
+    100% {
+        top: -10px;
+        left: 18px;
+    }
+}
