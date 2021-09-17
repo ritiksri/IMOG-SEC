@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'ludo-multiplayer-game',
     loadChildren: () => import('./ludo-multiplayer-game/ludo-multiplayer-game.module').then( m => m.LudoMultiplayerGamePageModule)
   },
+  {
+    path: 'ludo-mode-listing',
+    loadChildren: () => import('./ludo-mode-listing/ludo-mode-listing.module').then( m => m.LudoModeListingPageModule)
+  },
 ];
 
 @NgModule({
