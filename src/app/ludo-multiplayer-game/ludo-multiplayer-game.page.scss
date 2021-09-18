@@ -14,12 +14,13 @@
     background-color: antiquewhite;
     border-radius:  20px; 
     border: 2px solid chartreuse;
-    height: 90px;
-    width: 160px;
+    height: 120px;
+    width: 164px;
     margin:auto;
     box-shadow: cadetblue red yellow;
     margin-top: 200px;
     color: darksalmon;
+    padding-top: 0px;
    }
 .push {
     border: 10px solid #ffff0000;
@@ -46,7 +47,9 @@
    .video-card {
        height: 86px;
        width: 157px;
-       border-radius: 37px;
+       border-radius: 20px;
+       padding-top: 0px;
+
    }
    .logo-img-tis {
     font-size: 50px;
@@ -76,9 +79,7 @@
     
     100% {
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
-    
-    
-    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+           box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     
     }
     }
