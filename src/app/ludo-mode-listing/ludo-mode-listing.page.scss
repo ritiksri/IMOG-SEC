@@ -1,45 +1,65 @@
-.mode1{
-    border: 2px solid chartreuse;
-    border-radius:  20px; 
+.mode1 {
+    border: 10px solid #ffff0000;
+    border-radius: 20px;
     height: 90px;
     width: 160px;
-    margin:auto;
+    margin: auto;
     margin-top: 80px;
-    color: darksalmon;
+    color: white;
     text-align: center;
-    animation-name: xamples;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background-color: blue;
+    background: linear-gradient(37deg, #000000 34%, #ec1818 100%);
+    box-shadow: 3px 3px 13px 5px #312f08;
 }
-.mode3{
-    border: 2px solid chartreuse;
-    border-radius:  20px; 
+
+.mode3 {
+    border: 10px solid #ffff0000;
+    border-radius: 20px;
     height: 90px;
     width: 160px;
-    margin:auto;
+    margin: auto;
     margin-top: 40px;
-    color: darksalmon;
+    color: white;
     text-align: center;
-    animation-name: xamples;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(16, 16, 218);
+    background: linear-gradient(37deg, #000000 34%, #ec1818 100%);
+    box-shadow: 3px 3px 13px 5px #08310d;
 }
-.mode2{
-    border: 2px solid chartreuse;
-    border-radius:20px; 
+
+.mode2 {
+    border: 10px solid #ffff0000;
+    border-radius: 20px;
     height: 90px;
     width: 160px;
-    margin:auto;
+    margin: auto;
     margin-top: 40px;
-    color: darksalmon;
     text-align: center;
-    animation-name: xamples;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(16, 16, 218);
+    background: linear-gradient(37deg, #000000 34%, #ec1818 100%);
+    box-shadow: 3px 3px 13px 5px #090831;
 }
+
+.mode2::after {
+    border-radius: 20px;
+}
+
+.mode2::before {
+    border-radius: 20px;
+}
+
 .logo-img-tis {
     font-size: 50px;
     font-family: 'Monoton', cursive;
@@ -47,6 +67,7 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    margin-bottom: 100px;
 }
 
 @keyframes xample {
@@ -60,11 +81,12 @@
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
     }
 }
-.ludo-icon{
-margin: auto;
-margin-top: 70px;
 
+.ludo-icon {
+    margin: auto;
+    margin-top: 70px;
 }
+
 @keyframes xamples {
     0% {
         box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
@@ -74,24 +96,5 @@ margin-top: 70px;
     }
     100% {
         box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
-    }
-}
-.bgclass{
-    background-color: blueviolet;
-    animation-name: xampled;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   
-}
-@keyframes xampled{
-    0%{
-        background-color: burlywood;
-    }
-    25%{
-        background-color: red;
-    
-    }
-    50%{
-        background-color: rgb(123, 255, 0);
     }
 }
