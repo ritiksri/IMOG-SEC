@@ -1,0 +1,84 @@
+.pull {
+    border: 10px solid #ffff0000;
+    display: flex;
+    justify-content: center;
+    background: rgb(16, 16, 218);
+    background: linear-gradient(37deg, #000000 34%, #ec1818 100%);
+    box-shadow: 3px 3px 13px 5px #090831;
+    font-family: 'Gluten', cursive;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+   
+   animation-name: xample;
+    background-color: antiquewhite;
+    border-radius:  20px; 
+    border: 2px solid chartreuse;
+    height: 90px;
+    width: 160px;
+    margin:auto;
+    box-shadow: cadetblue red yellow;
+    margin-top: 200px;
+    color: darksalmon;
+   }
+.push {
+    border: 10px solid #ffff0000;
+    display: flex;
+    justify-content: center;
+    background: rgb(16, 16, 218);
+    background: linear-gradient(37deg, #000000 34%, #ec1818 100%);
+    box-shadow: 3px 3px 13px 5px #090831;
+    font-family: 'Gluten', cursive;
+    animation-name: xample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+   box-shadow: cadetblue red yellow;
+    background-color: antiquewhite;
+    border-radius:  20px; 
+    border: 2px solid chartreuse;
+    height: 90px;
+    width: 160px;
+    margin:auto;
+    margin-top: 40px;
+    color: darksalmon;
+   }
+   .video-card {
+       height: 86px;
+       width: 157px;
+       border-radius: 37px;
+   }
+   .logo-img-tis {
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    animation-name: xample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    margin-bottom: 50px;
+    margin-top: 220px;
+}
+@keyframes xample {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    
+    
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+     }
+    
+    50% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 255, 34), 0 0 33px rgb(0, 255, 34), 0 0 10px rgb(123, 255, 0), 0 0 0px rgb(0, 255, 21), 0 0 2px rgb(0, 255, 0);
+    
+    
+        box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    
+    }
+    
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
+    
+    
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+    
+    }
+    }
