@@ -101,3 +101,60 @@
         box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
     }
 }
+
+.tis-opening {
+    margin-top: 240px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.progressBar {
+    border-radius: 20px;
+    position: absolute;
+    height: 5px;
+    width: 300px;
+    background-color: rgb(255, 233, 233);
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 0, 0), 0 0 33px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), rgb(0, 0, 0)2px #f00;
+    animation-name: openingProgress;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.txt-prog {
+    margin-top: 160px;
+    position: absolute;
+    left: 25px;
+    width: 300px;
+    animation-name: openingLogo;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes openingProgress {
+    0% {
+        width: 0px;
+    }
+    100% {
+        opacity: 300px;
+    }
+}
+
+@keyframes openingLogo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+.logo-img-tis-op {
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    color: white;
+    margin-bottom: 100px;
+}

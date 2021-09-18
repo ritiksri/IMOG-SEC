@@ -1,4 +1,4 @@
-<div style="background-image: url('assets/background/ludo-back.png');
+<div *ngIf="showContent" style="background-image: url('assets/background/ludo-back.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;" class=" text-dark bgclass">
@@ -16,4 +16,30 @@ background-size: 100% 100%;" class=" text-dark bgclass">
     <div class="logo-tis-game-list text-center ludo-icon">
         <h3 class="logo-img-tis"> I M O G </h3>
     </div>
+</div>
+
+
+
+
+<!-- Opening Page -->
+<!-- LoGO -->
+<div *ngIf="showTicTacToe" class="background-tis text-dark" style="background-image: url('assets/background/ludo-back.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+
+    <div class=" tis-opening text-center">
+        <h1 class="logo-img-tis-op"><i class="fa fa-gamepad"></i> <br> L U D O </h1>
+    </div>
+
+    <div class="txt-prog">
+        <p style="color: white;"> <i> "Games don't make you violent, lag does." </i></p>
+        <div class="progressBar mx-auto "></div>
+        <br>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
 </div>
