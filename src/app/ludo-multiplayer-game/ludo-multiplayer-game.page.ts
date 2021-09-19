@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ludo-multiplayer-game.page.scss'],
 })
 export class LudoMultiplayerGamePage implements OnInit {
-
+  public showLudoRandomandFrnds = false;
   constructor() { }
 
   ngOnInit() {
