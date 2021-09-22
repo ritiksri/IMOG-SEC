@@ -7,6 +7,7 @@
     color: darksalmon;
     border: 8px solid grey;
 }
+
 .push {
     border: 10px solid #ffff0000;
     display: flex;
@@ -29,6 +30,7 @@
     margin-top: 40px;
     color: darksalmon;
 }
+
 .video-card {
     width: 164px;
     border-radius: 20px;
@@ -36,6 +38,7 @@
     margin-top: 200px;
     box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
 }
+
 .logo-img-tis {
     font-size: 50px;
     font-family: 'Monoton', cursive;
@@ -46,6 +49,7 @@
     margin-bottom: 50px;
     margin-top: 220px;
 }
+
 @keyframes xample {
     0% {
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
@@ -60,6 +64,7 @@
         box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     }
 }
+
 .card-text {
     border: 8px solid grey;
     display: inline-block;
@@ -72,33 +77,37 @@
     padding-top: 22px;
     padding-bottom: 2px;
 }
+
 // yha pe code for create and join
-.createandjoin-button{
+.createandjoin-button {
     display: flex;
     width: 200px;
     margin-top: 90px;
 }
-.create-button{
-}
-.join-button{
+
+.create-button {}
+
+.join-button {
     margin-left: 60px;
 }
-.coin-selection-box{
+
+.coin-selection-box {
     padding: 2px;
     width: 178px;
     border: 2px dotted rgb(233, 227, 227);
     margin-top: 20px;
-    background-color:darksalmon;
+    background-color: darksalmon;
     border-radius: 20px;
     animation-name: xampled;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
-   }
-.coin-box{
+}
+
+.coin-box {
     display: inline-block;
-    background-color:red;
-    color:whitesmoke;
+    background-color: red;
+    color: whitesmoke;
     margin-top: 2px;
     margin-left: 8px;
     font-size: 20px;
@@ -107,19 +116,21 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
-   }
-.playgame{
-    background-color:red;
+}
+
+.playgame {
+    background-color: red;
     height: 35px inline-block;
     width: 80px inline-block;
-    border:2px;
-    border-radius:10px;
-    margin:auto;
+    border: 2px;
+    border-radius: 10px;
+    margin: auto;
     font-size: 20px;
-    margin-bottom:150px;
+    margin-bottom: 150px;
 }
-.logo-img-ludo{
-   // font-size: 30px;
+
+.logo-img-ludo {
+    // font-size: 30px;
     font-family: 'Monoton', cursive;
     animation-name: xampled;
     animation-duration: 2s;
@@ -127,6 +138,7 @@
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     // margin-bottom: 100px;
 }
+
 @keyframes xampled {
     0% {
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
@@ -138,7 +150,8 @@
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
     }
 }
-.logo-img-imog{
+
+.logo-img-imog {
     font-size: 50px;
     font-family: 'Monoton', cursive;
     animation-name: xamplec;
@@ -147,6 +160,7 @@
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     margin-bottom: 20px;
 }
+
 @keyframes xamplec {
     0% {
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
@@ -158,29 +172,39 @@
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 4, 255), 0 0 33px rgb(47, 0, 255), 0 0 10px rgb(174, 0, 255), 0 0 0px rgb(38, 0, 255), 0 0 2px rgb(17, 0, 255);
     }
 }
-.creategame-button{
+
+.creategame-button {
     width: 170px;
- height: 90px;
- border-radius: 15px solid red;
-border: 3px;
-margin-top: 40px;
+    height: 90px;
+    border-radius: 15px solid red;
+    border: 3px;
+    margin-top: 40px;
 }
-.codeinsert{
-border: 2px solid whitesmoke;
-border-radius: 10px;
-width: 170px;
-height: 90px;
-margin-top: 240px;
+
+.codeinsert {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    width: 170px;
+    height: 90px;
+    margin-top: 240px;
 }
-.player-show{
+
+.player-show {
     border: 2px solid white;
     border-radius: 10px;
-    width: 85px;
+    width: 70px;
     height: 45px;
-margin-left: 40px;
-display: inline-block;
-   
+    margin-left: 6px;
+    display: inline-block;
 }
-.player-show1{
+
+.player-show-user {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 70px;
+    height: 45px;
+}
+
+.player-show1 {
     margin-bottom: 190px;
 }
