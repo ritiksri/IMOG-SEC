@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LudoMultiplayerGamePage implements OnInit {
   public showLudoRandomandFrnds = false;
   public showCODE = false;
+  public showcodeedit = false;
   constructor() { }
 
   ngOnInit() {
