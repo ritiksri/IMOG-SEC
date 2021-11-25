@@ -47,7 +47,7 @@
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     margin-bottom: 50px;
-    margin-top: 220px;
+    // margin-top: 220px;
 }
 
 @keyframes xample {
@@ -183,28 +183,29 @@
     border: 2px solid whitesmoke;
     border-radius: 10px;
     width: 170px;
-    height: 90px;
-    margin-top: 240px;
+    height: 50px;
+    margin-top: 160px;
 }
 
 .player-show {
     border: 2px solid white;
     border-radius: 10px;
-    width: 70px;
-    height: 45px;
-    margin-left: 6px;
+    width: 80px;
+    height: 100px;
+    margin-left: 30px;
     display: inline-block;
 }
 
 .player-show-user {
     border: 2px solid white;
     border-radius: 10px;
-    width: 70px;
-    height: 45px;
+    width: 80px;
+    height: 100px;
+    
 }
 
 .player-show1 {
-    margin-bottom: 190px;
+    // margin-bottom: 190px;
 }
 .entercode{
     width: 60px;
