@@ -1,5 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AddFriendsComponent } from './pannels/add-friends/add-friends.component';
+import { ClanComponent } from './pannels/clan/clan.component';
+import { GiftComponent } from './pannels/gift/gift.component';
+import { ProfileComponent } from './pannels/profile/profile.component';
+import { RankComponent } from './pannels/rank/rank.component';
+import { SettingComponent } from './pannels/setting/setting.component';
+import { ShopComponent } from './pannels/shop/shop.component';
+import { TournamentComponent } from './pannels/tournament/tournament.component';
 
 const routes: Routes = [
   // { path: 'signup', component: SignupPage },
@@ -54,6 +62,14 @@ const routes: Routes = [
     path: 'ludo-mode-listing',
     loadChildren: () => import('./ludo-mode-listing/ludo-mode-listing.module').then( m => m.LudoModeListingPageModule)
   },
+  { path: 'setting', component: SettingComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'clan', component: ClanComponent },
+  { path: 'tournament', component: TournamentComponent },
+  { path: 'rank', component: RankComponent },
+  { path: 'add-friend', component: AddFriendsComponent },
+  { path: 'gift', component: GiftComponent },
 ];
 
 @NgModule({

@@ -1,114 +1,97 @@
 <!-- Random / Friend Listing -->
 <div style="background-color: black">
-<div *ngIf="showLudoRandomandFrnds" style="background-image: url('assets/background/ludo-back.png');
+    <div *ngIf="showLudoRandomandFrnds" style="background-image: url('assets/background/ludo-back.png');
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: 100% 100%;" class=" text-dark bgclass">
-    <div class="text-center">
-        <div class="text-center video-card">
-            <video class="pull mx-auto" src="assets/card/onlinebgludofinals.mp4" autoplay loop></video>
-            <p class="card-text">
-                Random Player
-            </p>
+        <div class="text-center">
+            <div class="text-center video-card">
+                <video class="pull mx-auto" src="assets/card/onlinebgludofinals.mp4" autoplay loop></video>
+                <p class="card-text">
+                    Random Player
+                </p>
+            </div>
+        </div>
+        <div (click)="playwithfriendclick()" class="push">
+            play wth friends
+        </div>
+        <div class="logo-tis-game-list text-center ludo-icon">
+            <h3 class="logo-img-tis"> I M O G </h3>
         </div>
     </div>
-    <div class="push">
-        play wth friends
-    </div>
-    <div class="logo-tis-game-list text-center ludo-icon">
-        <h3 class="logo-img-tis"> I M O G </h3>
-    </div>
-</div>
 
 
-<!-- Edit in below div for code creation -->
-<div *ngIf="showCODE" class="fullpage" style="background-image: url('assets/background/ludo-back.png');
+    <!-- Edit in below div for code creation -->
+    <div *ngIf="showCODE" class="fullpage" style="background-image: url('assets/background/ludo-back.png');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;">
 
-    <div class="logo-ludo-game-list text-center ludo-icon">
+        <div class="logo-ludo-game-list text-center ludo-icon">
+            <h1 class="logo-img-ludo" style="font-size: 4.5rem; color: skyblue;"> L U D O </h1>
+        </div>
+
+        <div class="createandjoin-button mx-auto">
+            <button (click)="createCodeShow()" class="btn btn-danger create-button">Create</button>
+            <button (click)="joinTabShow()" class="btn btn-danger join-button">Join</button>
+        </div>
+        <!-- coin option -->
+        <div *ngIf="showCreate" class="coin-selection-box mx-auto">
+            <p class="coin-box"> 100 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;" alt="">
+            </p>
+            <p class="coin-box"> 200 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;">
+            </p>
+            <p class="coin-box"> 500 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;">
+            </p>
+            <p class="coin-box"> 1000 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;">
+            </p>
+            <p class="coin-box"> 5000 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;">
+            </p>
+            <p class="coin-box"> 10000 <img src="assets/icon/gold-coin.png" style="height: 20px;width: 20px;">
+            </p>
+        <button (click)="createCodeClick()" class="btn btn-danger creategame-button mx-auto">Create</button>
+        </div>
+         <!-- Join code  -->
+    <!-- new -->
+    <div *ngIf="showJoin">
+        <div class="entercode mx-auto">
+            enter code
+        </div>
+        <div class="ec-player-profile mx-auto">
+            player profie
+        </div>
+        <div class="ec-join-button">
+            <button class="btn btn-danger join-button mx-auto">Join</button>
+        </div>
+    </div>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+    </div>
+
+    <!-- eDIT HERE FOR code show -->
+    <div *ngIf="showcodeedit" class="logo-ludo-game-list text-center ludo-icon">
         <h1 class="logo-img-ludo" style="font-size: 4.5rem; color: skyblue;"> L U D O </h1>
-    </div>
-
-    <div class="createandjoin-button mx-auto">
-        <button class="btn btn-danger create-button">Create</button>
-        <button class="btn btn-danger join-button">Join</button>
-    </div>
-    <div class="coin-selection-box mx-auto">
-        <p class="coin-box"> 100
-            <!-- coin option -->
-            <img src="assets/icon/gold-coin.png" style="
-
-height: 20px;
-width: 20px;
-" alt=""></p>
-        <p class="coin-box"> 200 <img src="assets/icon/gold-coin.png" style="
-
-    height: 20px;
-    width: 20px; ">
+        <p class="codeinsert mx-auto">
+            code write
         </p>
-        <p class="coin-box"> 500 <img src="assets/icon/gold-coin.png" style="
-
-height: 20px;
-width: 20px;">
-        </p>
-        <p class="coin-box"> 1000 <img src="assets/icon/gold-coin.png" style="
-
-height: 20px;
-width: 20px;"></p>
-        <p class="coin-box"> 5000 <img src="assets/icon/gold-coin.png" style="
-
-height: 20px;
-width: 20px;"></p>
-        <p class="coin-box"> 10000 <img src="assets/icon/gold-coin.png" style="
-
-height: 20px;
-width: 20px; "> </p>
+        <div class="player-show1 mx-auto">
+            <p class="player-show">
+                user1
+            </p>
+            <p class="player-show">
+                user2
+            </p>
+            <p class="player-show">
+                user3
+            </p>
+            <p class="player-show-user mx-auto">
+                You
+            </p>
+            <div class="logo-tis-game-list text-center ludo-icon">
+                <h3 class="logo-img-tis"> I M O G </h3>
+            </div>
+        </div>
     </div>
-    <button class="btn btn-danger creategame-button mx-auto">Create</button>
-
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br>
-</div>
-
-<!-- eDIT HERE FOR code show -->
-<div *ngIf="showcodeedit" class="logo-ludo-game-list text-center ludo-icon">
-    <h1 class="logo-img-ludo" style="font-size: 4.5rem; color: skyblue;"> L U D O </h1>
-</div>
-
-<p class="codeinsert mx-auto">
-    code write
-</p>
-<div class="player-show1 mx-auto">
-    <p class="player-show">
-        user1
-    </p>
-    <p class="player-show">
-        user2
-    </p>
-    <p class="player-show">
-        user3
-    </p>
-    <p class="player-show-user mx-auto">
-        You
-    </p>
-
-<div class="logo-tis-game-list text-center ludo-icon">
-    <h3 class="logo-img-tis"> I M O G </h3>
-</div>
-</div>
-<!-- new -->
-
-
-<div class="entercode mx-auto">
-    enter code
-</div>
-<div class="ec-player-profile mx-auto">
-player profie
-</div>
-<div class="ec-join-button">
-    <button class="btn btn-danger join-button mx-auto">Join</button>
-    </div>
+   
 </div>
