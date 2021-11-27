@@ -24,7 +24,7 @@
     background-color: antiquewhite;
     border-radius: 20px;
     border: 2px solid chartreuse;
-    height: 90px;
+    // height: 90px;
     width: 160px;
     margin: auto;
     margin-top: 40px;
@@ -38,16 +38,26 @@
     margin-top: 200px;
     box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
 }
-
+.video-card-pwf {
+    width: 164px;
+    border-radius: 20px;
+    display: inline-block;
+    // margin-top: 20px;
+    box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
+}
 .logo-img-tis {
     font-size: 50px;
     font-family: 'Monoton', cursive;
-    animation-name: xample;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    // animation-name: xample;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     // margin-top: 220px;
+}
+.logo-tis-game-list{
+    margin-bottom: 10px;
+   
 }
 
 @keyframes xample {
@@ -134,7 +144,8 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
-    // margin-bottom: 100px;
+    margin-bottom: 1px;
+    
 }
 
 @keyframes xampled {
@@ -191,8 +202,8 @@
     border: 2px solid white;
     border-radius: 10px;
     width: 80px;
-    height: 100px;
-    margin-left: 30px;
+    height: 100px; 
+    margin-left: 1px;
     display: inline-block;
 }
 
@@ -201,21 +212,37 @@
     border-radius: 10px;
     width: 80px;
     height: 100px;
-    
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .player-show1 {
     // margin-bottom: 190px;
 }
-.entercode{
-    width: 60px;
-    height: 20px;
+.finaljoinletsimog{
+    width: 172px;
+    height: 55px;
     border-radius: 5px;
-    border: 2px solid red;
+    border: 2px solid white ;
+    margin: auto;
 }
-.ec-player-profie{
-    width: 40px;
-    height: 40px;
+.entercode{
+    width: 174px;
+    height: 50px;
     border-radius: 5px;
     border: 2px solid red;
+    margin-top: 50px;
+}
+.ec-player-profile{
+    width: 88px;
+    height: 110px;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin-top: 50px;
+}
+.ec-joinletsimog-button {
+    width: 88px;
+    height: 110px;
+    margin: auto;
+    margin-top: 50px;
 }

@@ -1,10 +1,10 @@
 <!-- Random / Friend Listing -->
-<div style="background-color: black">
-    <div *ngIf="showLudoRandomandFrnds" style="background-image: url('assets/background/ludo-back.png');
+
+    <div  style="background-image: url('assets/background/ludo-back.png');
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-size: 100% 100%;" class=" text-dark bgclass">
-        <div class="text-center">
+ background-size: 100% 100%; position: fixed; top: 0px; left:0px; right:0px;" class=" text-dark bgclass">
+       <div *ngIf="showLudoRandomandFrnds">       <div class="text-center">
             <div class="text-center video-card">
                 <video class="pull mx-auto" src="assets/card/onlinebgludofinals.mp4" autoplay loop></video>
                 <p class="card-text">
@@ -13,11 +13,18 @@
             </div>
         </div>
         <div (click)="playwithfriendclick()" class="push">
+            <div class="text-center video-card-pwf">
+            <video class="pull mx-auto" src="assets/card/onlinebgludofinals.mp4" autoplay loop></video>
+            <p class="card-text">
             play wth friends
+            </p>
+        </div>  
         </div>
         <div class="logo-tis-game-list text-center ludo-icon">
             <h3 class="logo-img-tis"> I M O G </h3>
         </div>
+        <br>
+    <br><br><br><br><br>
     </div>
 
 
@@ -60,10 +67,10 @@ background-size: 100% 100%;">
         <div class="ec-player-profile mx-auto">
             player profie
         </div>
-        <div class="ec-join-button">
-            <button class="btn btn-danger join-button mx-auto">Join</button>
+        <div class="ec-joinletsimog-button">
+            <button class="btn btn-danger joinletsimog-button mx-auto">Lets IMOG!</button>
         </div>
-    </div>
+    </div>  
         <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br>
@@ -88,10 +95,10 @@ background-size: 100% 100%;">
             <p class="player-show-user mx-auto">
                 You
             </p>
+            <div class="finaljoinletsimog">Lets IMOG</div>
             <div class="logo-tis-game-list text-center ludo-icon">
                 <h3 class="logo-img-tis"> I M O G </h3>
             </div>
         </div>
     </div>
-   
 </div>
