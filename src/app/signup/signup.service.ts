@@ -9,7 +9,7 @@ import { user } from './user';
 export class SignupService {
 
   constructor(private http: HttpClient) { }
-  baseUrl = 'https://solveyourday.com/php/user';
+  baseUrl = 'http://192.168.1.2/php/user';
 
   store(users: user) {
     return this.http.post(`${this.baseUrl}/storeuser.php`, { data: users }, {responseType: 'text'}).pipe(

@@ -3,6 +3,74 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%; height: 800px;">
 
+<div *ngIf="showcodeselection">
+
+<button (click)="createcodeshow()" class="btn btn-success">
+    Create code
+</button>
+<button (click)="joincodeshow()" class="btn btn-success">
+    Join code
+</button>
+
+
+</div>
+
+<div *ngIf="showcodecreate">
+
+    <p>
+        {{gameid}}
+    </p><p>
+       User1: {{user1}}
+    </p><p>
+      User2:  {{user2}}
+    </p><p>
+      User3:  {{user3}}
+    </p><p>
+      User4:  {{user4}}
+    </p>
+    <button class="btn btn-success">
+        start game
+    </button>
+    
+    
+</div>
+
+<div *ngIf="showcodejoinafter">
+
+    <p>
+        {{gameid}}
+    </p><p>
+       User1: {{user1}}
+    </p><p>
+      User2:  {{user2}}
+    </p><p>
+      User3:  {{user3}}
+    </p><p>
+      User4:  {{user4}}
+    </p>
+    <!-- <button class="btn btn-success">
+        start game
+    </button> -->
+    
+    
+</div>
+<div *ngIf="showcodejoin">
+
+    <input class="my-4 mx-3" type="text" class="form-control" name="model" [(ngModel)]="gameid">
+    <button (click)="showId()" class="btn btn-success">
+        start game
+    </button>
+    
+    
+</div>
+    
+
+
+
+
+
+<div *ngIf="startGame">
+
     <!-- navbar -->
     <div style="color: white; margin-top: 10px;">
         <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 25px;">Raja Mantri Chor Sipahi
@@ -79,7 +147,7 @@ background-size: 100% 100%; height: 800px;">
     text-align: center;">
         <i (click)="scoreopen()" class="fa fa-chevron-down" style="width: 20%; background-color: black; line-height: 1.5; border-radius: 10px; padding-top: 11px;"></i>
     </div>
-
+</div>
 
 
 
