@@ -295,7 +295,7 @@ background-size: 100% 100%;">
     <div (click)="createCode()" class="selectmode text-center">
         {{gameid}}
     </div>
-    <button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button>
+    <div class="start-entercode"><button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button></div>
     <div (click)="joinCode()" class="selectmode text-center" style="padding-top:2px ;">
         {{user2}}
         <br> VS
@@ -338,7 +338,7 @@ background-size: 100% 100%;">
         <input class="my-4 mx-3" type="text" class="form-control" name="model" [(ngModel)]="gameid">
         <button (click)="showId()" class="btn btn-success my-4">Join</button>
     </div>
-    <button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button>
+    <!-- <button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button> -->
 
     <div style="color: black; ">
         <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 40px; margin-top: 40px;">Tic Tac Toe
@@ -371,7 +371,8 @@ background-size: 100% 100%;">
     <div (click)="createCode()" class="selectmode text-center">
         {{gameid}}
     </div>
-    <button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button>
+    <!-- <button (click)="startGame()" class="btn btn-success mx-auto my-4">Start Game</button> -->
+    <p class="text-center text-dark" style="margin-top: 42px; font-weight: bolder;">waiting for host to start game....</p>
     <div (click)="joinCode()" class="selectmode text-center" style="padding-top:2px ;">
         {{user1}}
         <br> VS
