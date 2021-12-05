@@ -19,23 +19,30 @@ background-size: 100% 100%; height: 800px;">
 
 <div *ngIf="showcodecreate">
 
-    <div>
+
+    <div class="rmcs-create-show-gameid">
         {{gameid}}
-    </div><div>
+    </div>
+    <!-- adding a div -->
+    <div class="rmcs-create-users3">
+<div class="rmcs-create-userid">
        
        User1: {{user1}}
     
 </div>
 
-<div>
+<div class="rmcs-create-userid">
       User2:  {{user2}}
-    </div><div>
+    </div>
+<div class="rmcs-create-userid">
     
       User3:  {{user3}}
-    
-</div><div>
+    </div>
+</div>
+    <div class="rmcs-create-main-userid">
       User4:  {{user4}}
 </div>
+
     <button class="btn btn-success">
         start game
     </button>
@@ -45,17 +52,23 @@ background-size: 100% 100%; height: 800px;">
 
 <div *ngIf="showcodejoinafter">
 
-    <p>
+    <div class="rmcs-join-show-gameid">
         {{gameid}}
-    </p><p>
+    </div>
+    <div class="rmcs-join-users3">
+    <div class="rmcs-join-userid">
        User1: {{user1}}
-    </p><p>
+    </div>
+    <div class="rmcs-join-userid">
       User2:  {{user2}}
-    </p><p>
+    </div>
+    <div class="rmcs-join-userid">
       User3:  {{user3}}
-    </p><p>
+    </div>
+    </div>
+      <div class="rmcs-join-main-userid">
       User4:  {{user4}}
-    </p>
+    </div>
     <!-- <button class="btn btn-success">
         start game
     </button> -->
