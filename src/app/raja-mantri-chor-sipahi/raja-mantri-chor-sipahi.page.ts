@@ -106,6 +106,14 @@ setTimeout(()=>{
 
 }
 
+startGame1(): void{
+  this.showcodeselection = false;
+  this.showcodecreate = false;
+  this.showcodejoin = false;
+  this.showcodejoinafter = false;
+  this.updateCar2();
+  this.updateChance();
+}
   // Codes For Server
   
   updateCar2() {setTimeout(()=>{   
