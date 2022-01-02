@@ -163,14 +163,14 @@
 .logo-img-imog {
     font-size: 50px;
     font-family: 'Monoton', cursive;
-    animation-name: xamplec;
+    animation-name: xampleab;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     margin-bottom: 20px;
 }
 
-@keyframes xamplec {
+@keyframes xampleab {
     0% {
         text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px #f00, 0 0 33px #f00, 0 0 10px #f09, 0 0 0px #f00, 0 0 2px #f00;
     }
