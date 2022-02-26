@@ -8,6 +8,8 @@ import { List } from './List';
   styleUrls: ['./raja-mantri-chor-sipahi.page.scss'],
 })
 export class RajaMantriChorSipahiPage implements OnInit {
+  public exitcodecreate = false;
+public showRJMS = true;
 public notRoll = true;
 public yesRoll = false;
 public throwChit = false;
@@ -18,7 +20,8 @@ public showcodeselection = true;
 public startGame = false;
 public showcodecreate = false;
 public showcodejoin = false;
-public gameselected: any;
+  public gameselected: any;
+  public myCard = "none"
 public addBox: List =  {
   id: 0,
 user1_name: '',
@@ -39,18 +42,30 @@ user3_name: '',
 chance: 1,
  };
  addBoxVal: List[] = [];
- public gameid = 0;
+ public gameid = 98567;
   chittoggle = false;
   sessionname = "";
   user1 = "";
   user2 = "";
   user3 = "";
   user4 = "";
- public showcodejoinafter = false;
+  public showcodejoinafter = false;
+  public enableResponse = false;
+  public iAmRaja = true;
+  public IAmMantri = true;
+  public AgainIAmRaja = true;
 
   constructor(private listService: RajaMantriChorSipahiService) { }
 
   ngOnInit() {
+    this.openingPage();
+  }
+  openingPage(): void {
+
+    setTimeout(() => {
+      this.showRJMS = true;
+    }, 5000);
+
   }
 roll(): void{
   this.notRoll = false;
@@ -69,7 +84,8 @@ scoreopen(): void{
 }
 createcodeshow():void{
   this.addCar();
-  this.showcodeselection = false;
+  //this.showcodeselection = false;
+  this.showcodejoin = false;
   this.showcodecreate = true;
   setTimeout(()=>{   
     this.getCars2();
@@ -85,7 +101,7 @@ createcodeshow():void{
   }, 400);
 }
 joincodeshow():void{
-  this.showcodeselection = false;
+  //this.showcodeselection = false;
   this.showcodecreate = false;
   this.showcodejoin = true;
 }
@@ -107,6 +123,7 @@ setTimeout(()=>{
 }
 
 startGame1(): void{
+  this.startGame= true;
   this.showcodeselection = false;
   this.showcodecreate = false;
   this.showcodejoin = false;
@@ -2183,5 +2200,30 @@ getCars2(): void {
       // console.log(this.cars);
       
     }, 29500);
+  }
+
+
+  //Game Logic Start
+  checkForCard() {
+    this.myCard = "raja";
+    this.enableResponse = true;
+    if (this.myCard != "none") {
+      switch (this.myCard) {
+        case "raja":
+          this.iAmRaja = true;
+          break;
+        case "mantri":
+          if (true) {
+            this.IAmMantri = true;
+          }
+          break;
+        case "chor":
+          console.log("It is a Tuesday.");
+          break;
+        case "sipahi":
+          console.log("It is a Wednesday.");
+          break;
+      }
+    }
   }
 }

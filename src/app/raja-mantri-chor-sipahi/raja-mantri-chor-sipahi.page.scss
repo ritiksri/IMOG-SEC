@@ -6,14 +6,43 @@
     border-radius: 10px;
     background-color: grey;
     margin: auto;
-    padding-top: 20px;
-    padding-left: 20px;
     margin-top: 250px;
     animation-name: chitroll;
     animation-duration: .6s;
     animation-iteration-count: infinite;
 }
-
+.progressBar {
+  border-radius: 20px;
+  position: absolute;
+  height: 5px;
+  width: 300px;
+  background-color: rgb(255, 233, 233);
+  box-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 0px #fff, 0 0 8px rgb(0, 0, 0), 0 0 33px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0), rgb(0, 0, 0)2px #f00;
+  animation-name: openingProgress;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+.txt-prog {
+  margin-top: 160px;
+  position: absolute;
+  left: 25px;
+  width: 300px;
+  animation-name: openingLogo;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+.logo-img-tis-op {
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+  color: white;
+  margin-bottom: 100px;
+}
+.tis-opening {
+  margin-top: 240px;
+  animation-name: openingLogo;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
 .chit-roll_no {
     color: white;
     border: 2px solid white;
@@ -22,8 +51,6 @@
     border-radius: 10px;
     background-color: grey;
     margin: auto;
-    padding-top: 20px;
-    padding-left: 20px;
     margin-top: 250px;
 }
 
@@ -44,8 +71,6 @@
     border-radius: 51%;
     margin-left: 20px;
     margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 20px;
     position: absolute;
     background-color: grey;
 }
@@ -58,8 +83,6 @@
     border-radius: 51%;
     margin-left: 240px;
     margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 20px;
     position: absolute;
     background-color: grey;
 }
@@ -72,8 +95,6 @@
     border-radius: 51%;
     margin-left: 20px;
     margin-top: 118px;
-    padding-top: 10px;
-    padding-left: 20px;
     position: absolute;
     background-color: grey;
 }
@@ -86,8 +107,6 @@
     border-radius: 51%;
     margin-left: 240px;
     margin-top: 118px;
-    padding-top: 10px;
-    padding-left: 20px;
     position: absolute;
     background-color: grey;
 }
@@ -200,59 +219,103 @@
     animation-iteration-count: 1;
 }
 
+
 @keyframes scoreopen {
-    0% {
-        top: -400px;
-        left: 18pxx;
-    }
-    100% {
-        top: -10px;
-        left: 18px;
-    }
+  0% {
+    top: -400px;
+    left: 18pxx;
+  }
+
+  100% {
+    top: -10px;
+    left: 18px;
+  }
 }
-.rjms-create{
-    margin: auto;
-    height: 80px;
-    width: 130px;
-    margin-top: 189px;
-    margin-left: 114px;
-    background-color: blue;
-    background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
-    box-shadow: 3px 3px 13px 5px #fce2e3;
-    }
+.Create-join-btn-container {
+  margin-top: 155px;
+}
+.rjms-create {
+  border-radius: 30px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  background: linear-gradient(37deg, #000000 34%,#ec1818 100%);
+  box-shadow: 3px 3px 13px 5px #fce2e3;
+}
 .rjms-join{
-    margin: auto;
-    height: 80px;
-    width: 130px;
-    margin-top: 30px;
-    margin-left: 114px;
+    border-radius: 30px;
+    height: 100px;
+    width: 100px;
     background-color: blue;
     background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
     box-shadow: 3px 3px 13px 5px #fce2e3;
 }
-.rmcs-create-show-gameid{
-    color: white;
-    border: 2px solid white;
-    width: 140px;
-    height: 58px;
-    margin: auto;
-    margin-left: 100px;
-    margin-top: 100px;
-    border-radius: 5px;
-    background-color: blue;
-    background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
-    box-shadow: 3px 3px 13px 5px #fce2e3;
+.rjms-create:hover {
+  height: 120px;
+  width: 120px;
+  box-shadow: 3px 3px 13px 5px red;
+}
+.rjms-join:hover {
+  height: 120px;
+  width: 120px;
+  box-shadow: 3px 3px 13px 5px red;
+}
+.create-code-card {
+  animation-name: openingcodeBox;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  border: 2px double black;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  left: 34px;
+  top: 65px;
+  z-index: 10;
+  height: 426px;
+  width: 287px;
+}
+.join-after-code-card {
+  animation-name: openingcodeBox;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  border: 2px double black;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  left: 34px;
+  top: 110px;
+  z-index: 10;
+  height: 487px;
+  width: 287px;
+}
+.join-code-card {
+  animation-name: openingcodeBoxjoin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  border: 2px double black;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  left: 34px;
+  top: 65px;
+  z-index: 10;
+  height: 426px;
+  width: 287px;
+}
+.rmcs-create-show-gameid {
+  border: 4px double Black;
+  width: 140px;
+  height: 58px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 13px 5px #fce2e3;
+  font-size: 2rem;
 }
 .rmcs-create-userid{
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
     width: 80px;
-    height: 100px; 
-    margin-left: 1px;
-    display: inline-block;
-    background-color: blue;
+    height: 100px;
     background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
-    box-shadow: 3px 3px 13px 5px #fce2e3;
 }
 .rmcs-create-main-userid{
     border: 2px solid white;
@@ -267,12 +330,9 @@
 
 }
 .rmcs-create-users3{
-margin: auto;
-margin-left: 50px;
-margin-top: 110px;
-background-color: blue;
+/*background-color: blue;
 background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
-box-shadow: 3px 3px 13px 5px #fce2e3;
+box-shadow: 3px 3px 13px 5px #fce2e3;*/
 
 }
 .rmcs-join-show-gameid{
@@ -319,10 +379,65 @@ box-shadow: 3px 3px 13px 5px #fce2e3;
 }
 .showcodejoin{
     margin: auto;
-    margin-top: 213px;
+    margin-top:130px;
     width: 146px;
     height: 63px;
-    background-color: blue;
-    background: linear-gradient(37deg, #000000 34%,#ec1818  100%);
     box-shadow: 3px 3px 13px 5px #fce2e3;
+}
+.btn-toggle-sc-card {
+  width: 100%;
+  position: fixed;
+  top: -13px;
+  text-align: center;
+}
+.btn-toggle-sc-card2 {
+  width: 20%;
+  text-align: center;
+}
+.user-dp {
+  width: 97px;
+  height: 97px;
+  border-radius: 51%;
+  margin: auto;
+}
+.roller-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.enableResponse-ds{
+    position:fixed;
+    left:28px;
+    top: 415px;
+    
+}
+table, th, td {
+  border: 1px solid black;
+}
+@keyframes openingProgress {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    opacity: 300px;
+  }
+}
+@keyframes openingcodeBox {
+  0% {
+    left: -300px;
+  }
+
+  100% {
+    left: 34px;
+  }
+}
+@keyframes openingcodeBoxjoin {
+  0% {
+    left: 500px;
+  }
+
+  100% {
+    left: 34px;
+  }
 }

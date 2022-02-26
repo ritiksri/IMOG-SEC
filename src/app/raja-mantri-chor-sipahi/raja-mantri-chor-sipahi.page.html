@@ -1,143 +1,185 @@
-<div class="grid-container" style="background-image: url('assets/background/rmcs.jpg');
+<!-- Opening Page -->
+<!-- LoGO -->
+<div *ngIf="!showRJMS" class="background-tis text-dark" style="background-image: url('assets/background/ludo-back.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;">
+
+  <div class=" tis-opening text-center">
+    <h1 class="logo-img-tis-op"><i class="fa fa-gamepad"></i> <br> R M C S </h1>
+  </div>
+
+  <div class="txt-prog">
+    <p style="color: white;"> <i> "Games don't make you violent, lag does." </i></p>
+    <div class="progressBar mx-auto "></div>
+    <br>
+  </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+
+<div *ngIf="showRJMS" class="grid-container" style="background-image: url('assets/background/rmcs.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%; height: 800px;">
 
-<div *ngIf="showcodeselection">
-<div>
-<button (click)="createcodeshow()" class="btn btn-success rjms-create">
-    Create code
-</button> </div>
-<br>
-<div>
-<button (click)="joincodeshow()" class="btn btn-success rjms-join">
-    Join code
-</button> </div>
+  <div *ngIf="showcodeselection">
+    <div class=" tis-opening text-center">
+      <h1 class="logo-img-tis-op"><i class="fa fa-gamepad"></i> <br> R M C S </h1>
+    </div>
+    <div class="Create-join-btn-container container row mx-auto">
+      <button (click)="createcodeshow()" class="btn btn-success mx-auto rjms-create">
+        <!--rjms-create-->
+        Create code
+      </button>
+      <button (click)="joincodeshow()" class="btn btn-success mx-auto rjms-join">
+        <!--rjms-join-->
+        Join code
+      </button>
+    </div>
 
 
-</div>
+  </div>
 
-<div *ngIf="showcodecreate">
+  <div *ngIf="showcodecreate" class="create-code-card mx-auto" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
 
 
-    <div class="rmcs-create-show-gameid">
-        {{gameid}}
+    <div class="mx-auto rmcs-create-show-gameid bg-dark text-light text-center">
+      {{gameid}}
     </div>
     <!-- adding a div -->
-    <div class="rmcs-create-users3">
-<div class="rmcs-create-userid">
-       
-       User1: {{user1}}
-    
-</div>
+    <div class="rmcs-create-users3 row">
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/4.jpg" />
+      </div>
 
-<div class="rmcs-create-userid">
-      User2:  {{user2}}
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/3.jpg" />
+      </div>
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/2.jpg" />
+      </div>
+      <div class="rmcs-create-userid mx-auto ">
+        <img class="rmcs-create-userid" src="assets/testUserDP/1.jpg" />
+      </div>
     </div>
-<div class="rmcs-create-userid">
-    
-      User3:  {{user3}}
-    </div>
-</div>
-    <div class="rmcs-create-main-userid">
-      User4:  {{user4}}
-</div>
-<div class="startgame-create" style="margin: auto; margin-left: 123px;margin-top: 20px;">
-    <button class="btn btn-success">
+    <div style="">
+      <div (click)="startGame1()" class="mx-auto p-2 bg-dark text-light my-4 text-center" style="width: 100px; border-radius:6px;">
         start game
-    </button> </div>
-    
-    
-</div>
-
-<div *ngIf="showcodejoinafter">
-
-    <div class="rmcs-join-show-gameid">
-        {{gameid}}
+      </div>
     </div>
-    <div class="rmcs-join-users3">
-    <div class="rmcs-join-userid">
-       User1: {{user1}}
+
+  </div>
+
+  <div *ngIf="showcodejoinafter" class="join-after-code-card mx-auto" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+    <div class="mx-auto rmcs-create-show-gameid bg-dark text-light text-center">
+      {{gameid}}
     </div>
-    <div class="rmcs-join-userid">
-      User2:  {{user2}}
+    <!-- adding a div -->
+    <div class="rmcs-create-users3 row">
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/4.jpg" />
+      </div>
+
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/3.jpg" />
+      </div>
+      <div class="rmcs-create-userid mx-auto my-4">
+        <img class="rmcs-create-userid" src="assets/testUserDP/2.jpg" />
+      </div>
+      <div class="rmcs-create-userid mx-auto ">
+        <img class="rmcs-create-userid" src="assets/testUserDP/1.jpg" />
+      </div>
     </div>
-    <div class="rmcs-join-userid">
-      User3:  {{user3}}
+    <div style="">
+      <div (click)="startGame1()" class="mx-auto p-2 text-dark my-4 text-center" style="font-size:1.5rem;">
+        Waiting for host to start game...
+      </div>
     </div>
+  </div>
+
+  <div *ngIf="showcodejoin" class="join-code-card mx-auto" style="background-image: url('assets/background/tictactoe-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+    <div class="showcodejoin">
+      <input  type="text" class="form-control my-4 text-center" style="font-size: 2rem;" name="model" [(ngModel)]="gameid">
     </div>
-      <div class="rmcs-join-main-userid">
-      User4:  {{user4}}
+    <div (click)="showId()" class="mx-auto my-4 p-2 text-center bg-dark text-light" style="width:124px;">
+      Join game
     </div>
-    <!-- <button class="btn btn-success">
-        start game
-    </button> -->
-    
-    
-</div>
-<div *ngIf="showcodejoin">
-     <div class="showcodejoin">
-    <input class="my-4 mx-3" type="text" class="form-control" name="model" [(ngModel)]="gameid">
-</div>
-    <button (click)="showId()" class="btn btn-success" style="margin: auto; margin-top: 10px; margin-left: 127px;">
-        start game
-    </button>
-    
-    
-</div>
-    
+
+
+  </div>
 
 
 
 
 
-<div *ngIf="startGame">
+
+  <div *ngIf="startGame">
 
     <!-- navbar -->
     <div style="color: white; margin-top: 10px;">
-        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 25px;">Raja Mantri Chor Sipahi
-        </h1>
+      <h1 class="text-center" style="font-family: 'Permanent Marker', cursive; font-size: 25px;">
+        Raja Mantri Chor Sipahi
+      </h1>
     </div>
     <!-- user 1 -->
     <div class="user-1">
-        user 1
+      <img class="user-dp" src="assets/testUserDP/4.jpg" />
     </div>
     <!-- user 2 -->
     <div class="user-2">
-        user 2
+      <img class="user-dp" src="assets/testUserDP/3.jpg" />
     </div>
 
 
     <!-- center roller -->
     <div *ngIf="yesRoll" class="chit-roll">
-        roll
+      <img class="roller-box" src="assets/rmcs/roller.jpg" />
     </div>
     <div *ngIf="notRoll">
-        <div (click)="roll()" class="chit-roll_no">
-            roll
-        </div>
+      <div (click)="roll()" class="chit-roll_no">
+        <img class="roller-box" src="assets/rmcs/roller.jpg" />
+      </div>
     </div>
     <div *ngIf="doneRoll" class="chit-roll_no">
-        roll
+      <img class="roller-box" src="assets/rmcs/roller.jpg" />
     </div>
     <div *ngIf="throwChit">
-        <div class="chit-1"><i class="fa fa-envelope"></i>
-        </div>
-        <div class="chit-2"><i class="fa fa-envelope"></i>
-        </div>
-        <div (click)="chitopen()" class="chit-3"><i class="fa fa-envelope"></i>
-        </div>
-        <div class="chit-4 "><i class="fa fa-envelope"></i>
-        </div>
+      <div class="chit-1">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="chit-2">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div (click)="chitopen()" class="chit-3">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="chit-4 ">
+        <i class="fa fa-envelope"></i>
+      </div>
     </div>
 
     <!-- user 3 -->
     <div class="user-3">
-        user 3
+      <img class="user-dp" src="assets/testUserDP/2.jpg" />
     </div>
     <!-- user 4 -->
     <div class="user-4">
-        user 4
+      <img class="user-dp" src="assets/testUserDP/1.jpg" />
     </div>
 
     <!-- Chit Paper -->
@@ -145,31 +187,50 @@ background-size: 100% 100%; height: 800px;">
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;">
-        <div (click)="chitopen()" style="color: black; margin-top: 4px; margin-left: 10px; font-size: 18px; display: inline-block;">
-            <i class="fa fa-times"></i>
-        </div>
+      <div (click)="chitopen()" style="color: black; margin-top: 4px; margin-left: 10px; font-size: 18px; display: inline-block;">
+        <i class="fa fa-times"></i>
+      </div>
 
     </div>
-
-
+    <!-- Response Buttons -->
+    <div *ngIf="enableResponse" class="enableResponse-ds">
+      <div *ngIf="iAmRaja" class="bg-dark text-light text-center mx-auto p-2">Mantri-Mantri?</div>
+      <div *ngIf="IAmMantri" class="bg-dark text-light text-center mx-auto p-2">Ji Hujoor..</div>
+      <div *ngIf="AgainIAmRaja" class="bg-dark text-light text-center mx-auto p-2">in dono me se chor ka pta lagao!</div>
+    </div>
 
     <!-- Score table  -->
 
-    <div *ngIf="showOPtion" class="score-rmcs" style="background-image: url('assets/background/tictactoe-back.jpg');
+    <div *ngIf="showOPtion" class="score-rmcs p-2" style="background-image: url('assets/background/tictactoe-back.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;">
-
-
+      <div (click)="scoreopen()" style="color: black; margin-top: 8px; margin-left: 11px; font-size: 18px; display: inline-block;">
+        <i class="fa fa-times"></i>
+      </div>
+      <table style="width:100%;">
+        <thead>
+          <tr>
+            <th style="width:25%;" class="text-dark text-center" scope="col">Ritik</th>
+            <th style="width:25%;" class="text-dark text-center" scope="col">TIS</th>
+            <th style="width:25%;" class="text-dark text-center" scope="col">Rohit</th>
+            <th style="width:25%;" class="text-dark text-center" scope="col">Sangam</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-dark text-center" scope="row">500</th>
+            <td class="text-dark text-center">1000</td>
+            <td class="text-dark text-center">800</td>
+            <td class="text-dark text-center">0</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="
-    width: 100%;
-    position: fixed;
-    top: -13px;
-    text-align: center;">
-        <i (click)="scoreopen()" class="fa fa-chevron-down" style="width: 20%; background-color: black; line-height: 1.5; border-radius: 10px; padding-top: 11px;"></i>
+    <div *ngIf="!showOPtion"  class="btn-toggle-sc-card" style="">
+      <i (click)="scoreopen()" class="fa fa-chevron-down" style="width: 20%; background-color: black; line-height: 1.5; border-radius: 10px; padding-top: 11px;"></i>
     </div>
-</div>
+  </div>
 
 
 
